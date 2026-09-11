@@ -3,15 +3,36 @@
 Backend do portal **Derby Synthetica**, entrega de Framework Application do
 challenge FIAP "O Mundo de Synthetica" (2026).
 
+## Integrantes
+
+| Nome | RM |
+|---|---|
+| Denise Shamira Chuquimia | 563714 |
+| Tandara Sartore Perez de Azevedo | 566455 |
+| Álvaro Milantonio | 561652 |
+| Leonardo Henrique | 564231 |
+
 API REST em **FastAPI** com os quatro verbos do CRUD sobre conteúdos
 editoriais, mais a leitura das categorias. Os dados ficam em memória e são
 recarregados do `dados_iniciais.json` a cada startup, então o portal nunca
 aparece vazio.
 
 O frontend que consome esta API é um projeto Next separado, em outro
-repositório: **[LINK DO REPOSITÓRIO DO PORTAL]**. A entrega são os dois juntos.
-Quem escreve no acervo é o painel editorial do portal, em `/editorial`, que é
-onde o POST, o PUT e o DELETE daqui são exercitados pela interface.
+repositório: https://github.com/leonardohb7/syntheticafrontend. A entrega são os
+dois juntos. Quem escreve no acervo é o painel editorial do portal, em
+`/editorial`, que é onde o POST, o PUT e o DELETE daqui são exercitados pela
+interface.
+
+## Publicados
+
+| Serviço | URL |
+|---|---|
+| API (Render) | https://syntheticabackend.onrender.com |
+| Documentação interativa | https://syntheticabackend.onrender.com/docs |
+| Portal (Vercel) | https://frontend-three-fawn-51.vercel.app |
+
+O `/docs` é o caminho mais curto para demonstrar os quatro verbos: ele monta o
+formulário de cada rota sozinho, sem precisar de cliente HTTP.
 
 ## Como rodar
 
@@ -140,28 +161,47 @@ O middleware libera, por padrão, `http://localhost:3000` e
 `http://127.0.0.1:3000`, que é onde o Next roda em desenvolvimento.
 
 No deploy, defina a variável de ambiente **`FRONTEND_URL`** com a URL pública
-do frontend. Ela é acrescentada à lista de origens no startup:
+do frontend. Ela é acrescentada à lista de origens no startup. No serviço atual
+o valor é `https://frontend-three-fawn-51.vercel.app`:
 
 ```bash
-FRONTEND_URL=https://[URL PÚBLICA DO FRONTEND] uvicorn main:app
+FRONTEND_URL=https://frontend-three-fawn-51.vercel.app uvicorn main:app
 ```
 
 Sem isso o navegador bloqueia as respostas e a tela fica vazia sem nenhum erro
 aparecer no log do servidor, que é a falha mais comum nesse tipo de entrega.
 
+O `main.py` aplica `.rstrip("/")` no valor, então barra sobrando no fim não
+quebra a comparação. O que precisa bater exatamente é o resto: protocolo,
+subdomínio e domínio. Origem no CORS não aceita curinga parcial, então uma URL
+de preview da Vercel, que tem outro subdomínio, não é liberada por esta
+variável.
+
+Para conferir sem abrir o portal:
+
+```bash
+curl -s -o /dev/null -D - \
+  -H "Origin: https://frontend-three-fawn-51.vercel.app" \
+  https://syntheticabackend.onrender.com/categorias | grep -i access-control
+```
+
+A resposta precisa trazer `access-control-allow-origin` com a URL do portal.
+
 ## Deploy no Render
 
-O `render.yaml` na raiz já descreve o serviço. Dá para criar por Blueprint,
-apontando o Render para o repositório, ou criar um Web Service pelo painel e
-preencher à mão os mesmos valores:
+O serviço está no ar em https://syntheticabackend.onrender.com, criado como Web
+Service pelo painel, com os valores abaixo. O `render.yaml` na raiz descreve o
+mesmo serviço e serve tanto para recriar por Blueprint quanto como referência do
+que preencher à mão:
 
-| Campo | Valor |
+| Campo | Valor usado |
 |---|---|
 | Runtime | Python |
+| Plano | Free |
 | Build command | `pip install -r requirements.txt` |
 | Start command | `uvicorn main:app --host 0.0.0.0 --port $PORT` |
 | Health check path | `/` |
-| Variável de ambiente | `FRONTEND_URL` = URL pública do portal |
+| Variável de ambiente | `FRONTEND_URL` = `https://frontend-three-fawn-51.vercel.app` |
 
 ### O start command é a parte que costuma quebrar
 
@@ -197,6 +237,6 @@ na mesma sessão, sem deixar o serviço ocioso no meio.
 
 ## Pendências da entrega
 
-- [ ] `FRONTEND_URL` preenchida com a URL real do deploy
-- [ ] Link do repositório do portal, no topo deste arquivo
-- [ ] Link da API publicada
+- [x] `FRONTEND_URL` preenchida com a URL real do deploy
+- [x] Link do repositório do portal, no topo deste arquivo
+- [x] Link da API publicada
