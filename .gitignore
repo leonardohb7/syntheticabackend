@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Variáveis de ambiente (FRONTEND_URL entra por aqui no deploy)
+.env
+.env.*
+
+# Ferramentas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Sistema
+.DS_Store
+*.log

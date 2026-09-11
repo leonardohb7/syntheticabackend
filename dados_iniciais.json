@@ -1,0 +1,378 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "slug": "o-que-e",
+      "nome": "O Que É",
+      "descricao_curta": "A anatomia, a dinâmica e o pulso fundamental do flat-track roller derby.",
+      "trilha": "velocidade"
+    },
+    {
+      "id": 2,
+      "slug": "regras",
+      "nome": "Regras",
+      "descricao_curta": "Jams, pontos, formação do pack, penalidades e arbitragem explicados de forma clara.",
+      "trilha": "velocidade"
+    },
+    {
+      "id": 3,
+      "slug": "historia",
+      "nome": "História",
+      "descricao_curta": "Das maratonas dos anos 1930 à explosão do renascimento autônomo e feminista em Austin nos anos 2000.",
+      "trilha": "expressao"
+    },
+    {
+      "id": 4,
+      "slug": "cultura",
+      "nome": "Cultura",
+      "descricao_curta": "Identidade, filosofia faça-você-mesmo (DIY), diversidade e comunidade autogerida.",
+      "trilha": "expressao"
+    },
+    {
+      "id": 5,
+      "slug": "equipamentos",
+      "nome": "Equipamentos",
+      "descricao_curta": "Patins quad, dureza de rodas (durometer), rolamentos, trucks e armaduras de proteção.",
+      "trilha": "velocidade"
+    },
+    {
+      "id": 6,
+      "slug": "glossario",
+      "nome": "Glossário",
+      "descricao_curta": "Vocabulário essencial de pista: lead jammer, apex jump, star pass, goat e track cuts.",
+      "trilha": "velocidade"
+    },
+    {
+      "id": 7,
+      "slug": "curiosidades",
+      "nome": "Curiosidades",
+      "descricao_curta": "Números inusitados, física do atrito sobre rodas e tradições dos derby names.",
+      "trilha": "expressao"
+    }
+  ],
+  "conteudos": [
+    {
+      "id": 1,
+      "slug": "o-que-e-roller-derby",
+      "titulo": "O que é Roller Derby: Velocidade, Contato e Estratégia em 360 Graus",
+      "subtitulo": "Um dos esportes que mais crescem no mundo é uma coreografia de força coletiva, equilíbrio e raciocínio tático sobre oito rodas.",
+      "categoria_id": 1,
+      "resumo": "Diferente de qualquer esporte tradicional com bola, no roller derby a própria atleta é a bola e o alvo. Descubra como funciona uma partida em pista plana.",
+      "tempo_leitura": "4 min",
+      "data": "10 Outubro 2025",
+      "autor": "Equipe Editorial Synthetica",
+      "autor_cargo": "Curadoria Tática & Pesquisa",
+      "destaque": true,
+      "selo_editorial": "ESSENCIAL",
+      "arquetipo_grafico": "wheel",
+      "aprendizados": [
+        "Duas equipes de 5 atletas patinam simultaneamente no sentido anti-horário em uma pista oval.",
+        "A atleta com a estrela no capacete (Jammer) pontua ao ultrapassar adversárias do pack.",
+        "Bloqueadoras atacam e defendem ao mesmo tempo — abrindo caminho para sua jammer e travando a adversária.",
+        "O esporte é regido globalmente pela WFTDA (Women's Flat Track Derby Association) com foco em autogestão."
+      ],
+      "secoes": [
+        {
+          "titulo": "O Tabuleiro Vivo da Pista",
+          "texto": "Em uma partida de roller derby (chamada de bout), o jogo se divide em dois tempos de 30 minutos, compostos por pequenos confrontos de até 2 minutos chamados \"jams\". A cada jam, cada time coloca 5 patinadoras na pista: uma Jammer (que veste a touca com estrela) e quatro Bloqueadoras (uma das quais pode ser a Pivot, com faixa listrada).",
+          "destaque": "No roller derby, não existe bola. A própria jammer é o projétil que pontua."
+        },
+        {
+          "titulo": "O Paradoxo: Atacar e Defender Simultaneamente",
+          "texto": "O que torna o roller derby único no planeta é o \"pack\" — o grupo principal de bloqueadoras de ambos os times patinando juntas. Enquanto as bloqueadoras do time A tentam conter a jammer do time B usando ombros, quadris e troncos, elas também precisam coordenar paredes de proteção para ajudar a sua própria jammer a romper a linha adversária.",
+          "citacao": "Você não espera a sua vez de defender. A cada segundo, seu corpo é tanto uma muralha de contenção quanto um aríete estratégico."
+        },
+        {
+          "titulo": "Zona de Contato Legal",
+          "texto": "Embora o contato seja intenso e real, o esporte possui regras biomecânicas rigorosas. É proibido o uso de cotovelos, antebraços, cabeçadas, tropeções e empurrões pelas costas. O contato é feito com o torso, quadris e coxas, exigindo um controle neuromuscular milimétrico sobre os patins quad."
+        }
+      ],
+      "slugs_relacionados": [
+        "regras-essenciais-do-pack-e-pontuacao",
+        "anatomia-do-patim-quad-e-rodas",
+        "a-cultura-diy-e-diversidade-no-derby"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "regras-essenciais-do-pack-e-pontuacao",
+      "titulo": "Regras Essenciais: A Geometria do Pack e a Conquista do Lead Jammer",
+      "subtitulo": "Compreenda a pontuação por voltas, o status de Lead Jammer e por que a penalidade de 30 segundos muda o rumo de um jogo.",
+      "categoria_id": 2,
+      "resumo": "Aprenda como funcionam os Jams, o poder estratégico de chamar o fim da disputa e o temido \"Power Jam\" quando a jammer rival vai para o box.",
+      "tempo_leitura": "6 min",
+      "data": "18 Outubro 2025",
+      "autor": "Helena \"Apex Phantom\"",
+      "autor_cargo": "Head Referee & Instrutora WFTDA",
+      "destaque": true,
+      "selo_editorial": "MANUAL DE PISTA",
+      "arquetipo_grafico": "star",
+      "aprendizados": [
+        "A primeira Jammer a atravessar o pack legalmente recebe o status de Lead Jammer.",
+        "O Lead Jammer ganha a vantagem tática de encerrar o jam a qualquer instante dando toques nos quadris.",
+        "Cada patinadora adversária ultrapassada a partir da segunda volta vale 1 ponto limpo.",
+        "Penalidades graves mandam a atleta para o Penalty Box por 30 segundos cronometrados de jogo ativo."
+      ],
+      "secoes": [
+        {
+          "titulo": "A Corrida Inicial e o Status de Lead",
+          "texto": "Ao apito inicial, o pack de bloqueadoras parte em velocidade controlada. Segundos depois, as duas jammers largam da linha traseira. A primeira que conseguir romper todas as bloqueadoras adversárias sem cometer nenhuma falta técnica é declarada a \"Lead Jammer\". Esse privilégio permite chamar o fim do jam a qualquer momento com as duas mãos nos quadris, impedindo que o time rival marque pontos.",
+          "citacao": "O controle do relógio no derby é a mais sutil das armas."
+        },
+        {
+          "titulo": "Definição e Destruição de Pack",
+          "texto": "O pack só existe se a maioria das bloqueadoras estiver patinando em proximidade (até 3 metros de distância mútua). Se as patinadoras se dispersarem, os árbitros sinalizam \"No Pack\", e todas as bloqueadoras devem imediatamente se reagrupar antes que possam realizar qualquer bloqueio."
+        },
+        {
+          "titulo": "O Temido Power Jam",
+          "texto": "Quando uma jammer comete uma falta (como um corte de pista ilegal ou contato perigoso) e é enviada ao Penalty Box, a outra equipe entra em \"Power Jam\". Durante os 30 segundos seguintes, a jammer em pista tem caminho livre contra um pack desfalcado, gerando as sequências de maior pontuação e adrenalina do jogo."
+        }
+      ],
+      "slugs_relacionados": [
+        "o-que-e-roller-derby",
+        "posicoes-e-estrategias-jammer-pivot-blocker",
+        "glossario-da-pista-termos-essenciais"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "anatomia-do-patim-quad-e-rodas",
+      "titulo": "Anatomia do Patim Quad: Dureza de Rodas, Trucks e a Física do Atrito",
+      "subtitulo": "Por que no roller derby se usam patins de quatro rodas paralelas em vez de inline, e como cada componente afeta sua agilidade.",
+      "categoria_id": 5,
+      "resumo": "Um guia minucioso sobre durometer (dureza das rodas), amortecedores cushions, botas de cano baixo e a importância vital do toe stop.",
+      "tempo_leitura": "5 min",
+      "data": "02 Novembro 2025",
+      "autor": "Camila \"Bearing Surge\"",
+      "autor_cargo": "Engenheira Mecânica & Skater",
+      "destaque": false,
+      "selo_editorial": "MATERIAL LAB",
+      "arquetipo_grafico": "bearing",
+      "aprendizados": [
+        "Patins quad proporcionam uma base retangular estável indispensável para suportar impacto lateral e desacelerações bruscas.",
+        "Rodas macias (84A-88A) oferecem aderência para quadras lisas, enquanto duras (94A-98A) garantem velocidade pura.",
+        "O toe stop frontal é usado não só para frear, mas como apoio primário para arrancadas explosivas e corrida na ponta dos pés."
+      ],
+      "secoes": [
+        {
+          "titulo": "Por que Patins Tradicionais Quad?",
+          "texto": "Diferente dos patins inline (onde as rodas ficam em linha reta favorecendo velocidade frontal linear), o roller derby exige paradas laterais em frações de segundo (\"hockey stops\" e \"plow stops\"), giros e transferências de peso súbitas. A base em formato de paralelogramo dos patins quad oferece torque e resistência incomparáveis ao choque mecânico."
+        },
+        {
+          "titulo": "A Escala de Durometer (Dureza das Rodas)",
+          "texto": "As rodas de derby variam geralmente entre 84A e 101A na escala Shore. Rodas na faixa 88A-92A mordem o piso de concreto polido ou madeira envernizada, evitando derrapagens indesejadas em curvas fechadas. Já em superfícies aderentes como pistas de ginásio sintéticas, rodas mais duras (95A+) eliminam o arrasto desnecessário.",
+          "destaque": "Ajustar os cushions de uretano nos trucks determina se seu patim responde com precisão milimétrica ou estabilidade rígida."
+        },
+        {
+          "titulo": "Botas de Cano Baixo e Liberdade Articular",
+          "texto": "Ao contrário da patinação artística clássica que usa botas de cano alto e rígidas para proteger o tornozelo em saltos verticais, o roller derby usa botas de cano baixo em couro ou microfibra sintética, permitindo que a patinadora curve os tornozelos em ângulos agudos para raspar as curvas na linha interna da pista."
+        }
+      ],
+      "slugs_relacionados": [
+        "o-que-e-roller-derby",
+        "guia-iniciante-equipamentos-de-protecao",
+        "glossario-da-pista-termos-essenciais"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "posicoes-e-estrategias-jammer-pivot-blocker",
+      "titulo": "Posições e Estratégias: Da Parede Impenetrável ao Star Pass",
+      "subtitulo": "O xadrez humano sobre rodas: como Jammer, Blocker e Pivot orquestram a dinâmica de controle de espaço.",
+      "categoria_id": 2,
+      "resumo": "Conheça o papel de cada jogadora em quadra, como funcionam as paredes em tripé e a manobra tática de passar a touca estelar.",
+      "tempo_leitura": "5 min",
+      "data": "14 Novembro 2025",
+      "autor": "Valéria \"Vector Shift\"",
+      "autor_cargo": "Treinadora & Estrategista",
+      "destaque": false,
+      "selo_editorial": "ESTRATÉGIA",
+      "arquetipo_grafico": "pack",
+      "aprendizados": [
+        "Bloqueadoras constroem \"tripés\" — estruturas geométricas de 3 corpos entrelaçados para neutralizar jammers.",
+        "A Pivot é a capitã do pack em pista e pode receber a estrela da jammer para assumir a pontuação.",
+        "Comunicação visual e comandos de voz rápidos definem quem controla a pista."
+      ],
+      "secoes": [
+        {
+          "titulo": "A Geometria do Tripé (Tripod)",
+          "texto": "A formação mais clássica do derby moderno é o tripé: duas bloqueadoras de costas para a pista travando o quadril em cunha, apoiadas por uma terceira jogadora na retaguarda (\"brace\") que orienta o movimento de frente para a jammer adversária. Juntas, elas atuam como uma única entidade física com três eixos de sustentação."
+        },
+        {
+          "titulo": "O \"Star Pass\" e a Touca Listrada",
+          "texto": "Se a jammer estiver exausta ou presa em um bloqueio intransponível, ela pode remover a touca com a estrela e entregá-la nas mãos da sua Pivot (que veste a touca com listra longitudinal). Imediatamente, a Pivot torna-se a nova Jammer, surpreendendo a defesa rival em uma troca fluida de papeis.",
+          "citacao": "No derby, um plano tático dura até o momento em que a jammer adversária salta pelo ápice da curva."
+        }
+      ],
+      "slugs_relacionados": [
+        "o-que-e-roller-derby",
+        "regras-essenciais-do-pack-e-pontuacao"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "a-cultura-diy-e-diversidade-no-derby",
+      "titulo": "Autogestão, Cultura DIY e o Espaço Mais Inclusivo do Esporte Mundial",
+      "subtitulo": "Por que o roller derby se tornou uma referência pioneira em inclusão de gênero, autonomia comunitária e pertencimento.",
+      "categoria_id": 4,
+      "resumo": "Gerido pelas próprias atletas, o roller derby rejeitou o modelo corporativo de grandes ligas comerciais para construir um espaço verdadeiramente democrático.",
+      "tempo_leitura": "4 min",
+      "data": "28 Novembro 2025",
+      "autor": "Mariana \"Nova Kinetic\"",
+      "autor_cargo": "Socióloga e Skater",
+      "destaque": false,
+      "selo_editorial": "COMUNIDADE",
+      "arquetipo_grafico": "star",
+      "aprendizados": [
+        "Política \"By the skaters, for the skaters\" garante que atletas decidam as regras, finanças e rumos da liga.",
+        "Pioneirismo em políticas de inclusão de pessoas trans, não-binárias e queer desde os anos 2000.",
+        "A adoção de nomes de derby (derby names) e números expressa alter-egos artísticos e libertários."
+      ],
+      "secoes": [
+        {
+          "titulo": "Por Atletas, Para Atletas",
+          "texto": "Ao contrário de esportes controlados por federações burocráticas distantes, as ligas de roller derby funcionam sob o lema \"By the skaters, for the skaters\". As próprias patinadoras limpam as quadras, vendem ingressos, confeccionam uniformes, organizam a arbitragem e votam democraticamente nas diretrizes de suas associações."
+        },
+        {
+          "titulo": "Um Santuário de Diversidade Corporal e Identitária",
+          "texto": "No roller derby, não existe um biotipo ideal. Corpos com maior centro de gravidade e massa física são pilares fundamentais em bloqueios estáveis; corpos leves e esguios são mestres em arrancadas ágeis. Cada anatomia humana encontra uma vantagem tática natural na pista.",
+          "citacao": "Não adaptamos os corpos ao esporte. O esporte celebra a multiplicidade dos corpos."
+        }
+      ],
+      "slugs_relacionados": [
+        "historia-das-maratonas-ao-flat-track-moderno",
+        "o-que-e-roller-derby"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "historia-das-maratonas-ao-flat-track-moderno",
+      "titulo": "História do Roller Derby: Das Maratonas dos Anos 30 à Revolução de Austin",
+      "subtitulo": "De espetáculo de resistência na Grande Depressão a teatro televisivo e, finalmente, esporte de contato autêntico e atlético.",
+      "categoria_id": 3,
+      "resumo": "A saga de Leo Seltzer, as pistas inclinadas em madeira dos anos 1950 e o renascimento revolucionário no Texas em 2001.",
+      "tempo_leitura": "6 min",
+      "data": "05 Dezembro 2025",
+      "autor": "Gabriel \"Orbit Shift\"",
+      "autor_cargo": "Historiador do Esporte",
+      "destaque": false,
+      "selo_editorial": "LINHA DO TEMPO",
+      "arquetipo_grafico": "track",
+      "aprendizados": [
+        "Criado em Chicago em 1935 como maratona de patinação de resistência durante a Depressão americana.",
+        "Transformou-se em fenômeno televisivo nos anos 50 e 60 com roteiros dramáticos semelhantes à luta livre profissional.",
+        "Em 2001, um grupo de mulheres em Austin (Texas) reinventou o esporte em pistas planas (flat track), tornando-o acessível e competitivo."
+      ],
+      "secoes": [
+        {
+          "titulo": "O Nascimento em Meio à Crise",
+          "texto": "Em 1935, no auge da Grande Depressão nos EUA, o promotor Leo Seltzer notou o fascínio popular por maratonas de dança e caminhada. Ele idealizou uma corrida contínua de patins sobre pista de madeira inclinada (banked track), na qual duplas cobriam a distância equivalente a cruzar os Estados Unidos. O público delirava quando ocorriam colisões durante as ultrapassagens."
+        },
+        {
+          "titulo": "O Apagão dos Anos 80 e o Renascimento Flat-Track",
+          "texto": "Com o custo astronômico de construir e transportar pistas inclinadas pesadas, o esporte praticamente desapareceu nos anos 1980. Até que, em abril de 2001, um grupo de mulheres em Austin, Texas (as fundadoras da liga Bad Girl Good Woman Productions), teve uma ideia genial: usar fitas adesivas para desenhar a pista oval diretamente no chão plano de ginásios, estacionamentos e galpões."
+        }
+      ],
+      "slugs_relacionados": [
+        "a-cultura-diy-e-diversidade-no-derby",
+        "o-que-e-roller-derby"
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "guia-iniciante-equipamentos-de-protecao",
+      "titulo": "Guia do Iniciante: Armaduras de Proteção para Entrar na Pista com Segurança",
+      "subtitulo": "Capacete multimpacto, joelheiras de impacto balístico e protetor bucal: a ciência de cair sem se machucar.",
+      "categoria_id": 5,
+      "resumo": "Antes de aprender a patinar em velocidade, a primeira lição no roller derby é aprender a cair. Conheça as 5 proteções mandatórias.",
+      "tempo_leitura": "4 min",
+      "data": "12 Dezembro 2025",
+      "autor": "Beatriz \"Shield Core\"",
+      "autor_cargo": "Instrutora de Segurança & Fresh Meat Coach",
+      "destaque": false,
+      "selo_editorial": "SEGURANÇA",
+      "arquetipo_grafico": "truck",
+      "aprendizados": [
+        "Capacete certificado (CPSC / ASTM) ajustado rente às sobrancelhas é mandatório.",
+        "Joelheiras profissionais com placas plásticas de troca rápida e espuma de alta densidade absorvem quedas de joelho.",
+        "Wrist guards (protetores de punho) com tala rígida evitam hiperextensão ao tocar o solo.",
+        "Protetor bucal moldável personalizado preserva a arcada dentária e reduz choque craniano."
+      ],
+      "secoes": [
+        {
+          "titulo": "A Filosofia da Queda Controlada",
+          "texto": "No roller derby, a postura fundamental (\"derby stance\") é agachada, com o centro de gravidade baixo e os joelhos flexionados. Se você perde o equilíbrio, a técnica ensina a deslizar nos protetores de joelho (knee slide) ou em quatro apoios, transformando o impacto repentino em um deslizamento suave sobre o piso."
+        },
+        {
+          "titulo": "As 5 Armaduras Obrigatórias",
+          "texto": "Nenhuma pessoa entra na pista sem o conjunto completo: 1. Capacete fechado; 2. Protetor bucal; 3. Munhequeiras com tala palmar; 4. Cotoveleiras com concha protetora; 5. Joelheiras derby de perfil largo."
+        }
+      ],
+      "slugs_relacionados": [
+        "anatomia-do-patim-quad-e-rodas",
+        "glossario-da-pista-termos-essenciais"
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "glossario-da-pista-termos-essenciais",
+      "titulo": "Glossário da Pista: Decodificando o Dialeto Tático do Roller Derby",
+      "subtitulo": "Apex Jump, Track Cut, Goat, Whip e Can Opener: entenda a linguagem que as atletas e juízes falam.",
+      "categoria_id": 6,
+      "resumo": "Um dicionário visual dos principais termos, sinais de arbitragem e estratégias faladas dentro e fora do banco.",
+      "tempo_leitura": "5 min",
+      "data": "08 Janeiro 2026",
+      "autor": "Equipe Editorial Synthetica",
+      "autor_cargo": "Curadoria Tática",
+      "destaque": false,
+      "selo_editorial": "VOCABULÁRIO",
+      "arquetipo_grafico": "star",
+      "aprendizados": [
+        "Apex Jump: o salto espetacular no ar cortando a curva por dentro da linha e aterrissando na pista legalmente.",
+        "Track Cut: penalidade de sair da pista e reentrar à frente de quem te empurrou.",
+        "Goat: tática de prender uma bloqueadora adversária na frente para forçar o pack a desacelerar.",
+        "Whip: usar o impulso ou braço de uma colega de time como estilingue para projetar a jammer para frente."
+      ],
+      "secoes": [
+        {
+          "titulo": "Termos de Manobra e Movimento",
+          "texto": "O roller derby possui um vocabulário dinâmico que combina termos em inglês universais da WFTDA com gírias regionais. Dominar esses termos permite acompanhar qualquer transmissão ao vivo ou entender comandos imediatos das capitãs durante um confronto tenso."
+        }
+      ],
+      "slugs_relacionados": [
+        "regras-essenciais-do-pack-e-pontuacao",
+        "o-que-e-roller-derby"
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "o-salto-do-apice-fisica-e-coragem-no-apex-jump",
+      "titulo": "O Salto do Ápice: Física, Trajetória e Coragem no Apex Jump",
+      "subtitulo": "Como a mais audaciosa manobra do roller derby desafia o espaço e as leis da inércia sobre rodas.",
+      "categoria_id": 7,
+      "resumo": "Quando a defesa fecha todas as brechas no chão, a única rota para a jammer é o ar. Saiba como funciona o Apex Jump.",
+      "tempo_leitura": "3 min",
+      "data": "20 Janeiro 2026",
+      "autor": "Camila \"Bearing Surge\"",
+      "autor_cargo": "Engenheira Mecânica & Skater",
+      "destaque": false,
+      "selo_editorial": "AERODINÂMICA",
+      "arquetipo_grafico": "wheel",
+      "aprendizados": [
+        "A jammer salta antes da curva, voa por fora dos limites da pista e aterrissa legalmente dentro da área de jogo.",
+        "Para ser legal, nenhum patim pode encostar no chão fora dos limites enquanto ela corta a curvatura.",
+        "Exige arrancada balística de 25 km/h e equilíbrio milimétrico ao tocar o piso nas quatro rodas."
+      ],
+      "secoes": [
+        {
+          "titulo": "Voando Sobre a Linha da Curva",
+          "texto": "O ápice da pista oval é a curva mais fechada. Quando uma parede de bloqueadoras fecha a linha interna rente à corda, uma jammer de elite usa a inércia centrífuga para saltar na diagonal. Durante o décimo de segundo em que está suspensa no ar, seu corpo ultrapassa três bloqueadoras sem cometer falta."
+        }
+      ],
+      "slugs_relacionados": [
+        "regras-essenciais-do-pack-e-pontuacao",
+        "anatomia-do-patim-quad-e-rodas"
+      ]
+    }
+  ]
+}
