@@ -8,7 +8,10 @@ editoriais, mais a leitura das categorias. Os dados ficam em memória e são
 recarregados do `dados_iniciais.json` a cada startup, então o portal nunca
 aparece vazio.
 
-O frontend que consome esta API é um projeto Next separado.
+O frontend que consome esta API é um projeto Next separado, em outro
+repositório: **[LINK DO REPOSITÓRIO DO PORTAL]**. A entrega são os dois juntos.
+Quem escreve no acervo é o painel editorial do portal, em `/editorial`, que é
+onde o POST, o PUT e o DELETE daqui são exercitados pela interface.
 
 ## Como rodar
 
@@ -70,7 +73,9 @@ curl "http://127.0.0.1:8000/conteudos?trilha=velocidade"
 curl "http://127.0.0.1:8000/conteudos?busca=jammer"
 
 # detalhar pelo slug
-curl http://127.0.0.1:8000/conteudos/slug/o-que-e-roller-derby
+curl http://127.0.0.1:8000/conteudos/slug/a-roda-que-sente-o-piso
+
+# cadastrar, editar e remover pelo /docs, que monta o formulário sozinho
 ```
 
 ## Modelo de dados
@@ -123,7 +128,7 @@ nenhum, porque o schema de entrada simplesmente não tem esse campo.
 | `main.py` | Aplicação FastAPI, CORS e rotas |
 | `models.py` | Schemas Pydantic e validação |
 | `database.py` | Base em memória e todas as regras de acesso |
-| `dados_iniciais.json` | Seed: 7 categorias e 9 conteúdos |
+| `dados_iniciais.json` | Seed: 6 categorias e 9 conteúdos |
 
 Nenhuma rota lê as listas de dados diretamente: tudo passa pelas funções do
 `database.py`. A intenção é que trocar a memória por um banco real signifique
@@ -144,8 +149,54 @@ FRONTEND_URL=https://[URL PÚBLICA DO FRONTEND] uvicorn main:app
 Sem isso o navegador bloqueia as respostas e a tela fica vazia sem nenhum erro
 aparecer no log do servidor, que é a falha mais comum nesse tipo de entrega.
 
+## Deploy no Render
+
+O `render.yaml` na raiz já descreve o serviço. Dá para criar por Blueprint,
+apontando o Render para o repositório, ou criar um Web Service pelo painel e
+preencher à mão os mesmos valores:
+
+| Campo | Valor |
+|---|---|
+| Runtime | Python |
+| Build command | `pip install -r requirements.txt` |
+| Start command | `uvicorn main:app --host 0.0.0.0 --port $PORT` |
+| Health check path | `/` |
+| Variável de ambiente | `FRONTEND_URL` = URL pública do portal |
+
+### O start command é a parte que costuma quebrar
+
+`--host 0.0.0.0` não é detalhe. Sem ele o uvicorn escuta apenas em `127.0.0.1`,
+de dentro do contêiner, e o roteador do Render nunca alcança a aplicação: o
+deploy trava em "no open ports detected" enquanto o log mostra o servidor
+subindo normalmente, que é o que torna essa falha difícil de ler.
+
+A porta também não pode ser fixada em 8000. Ela vem de `$PORT`, que o Render
+define a cada boot.
+
+### Versão do Python
+
+O arquivo `.python-version` fixa o **3.14**, que é onde as dependências foram
+testadas. Se o build reclamar que a versão não está disponível na plataforma,
+esse arquivo é o único lugar a mudar: baixar para `3.13` funciona, porque
+nenhuma dependência do projeto exige recurso exclusivo do 3.14.
+
+### Duas consequências do plano gratuito
+
+**O serviço hiberna.** Depois de um tempo sem tráfego, o Render derruba a
+instância, e a primeira requisição seguinte espera o boot, que leva dezenas de
+segundos. É por isso que o portal busca os dados no cliente, e nunca em Server
+Component: com SSR, essa espera viraria tela branca longa ou falha de build.
+
+**Os dados voltam ao seed a cada restart.** A base é uma lista em memória, então
+tudo que for cadastrado pelo painel editorial desaparece quando a instância
+hiberna, quando o serviço reinicia ou quando sai um deploy novo. O acervo nunca
+fica vazio, porque o `dados_iniciais.json` recarrega no startup, mas conteúdo
+criado na demonstração não sobrevive à pausa. Para gravar e mostrar o vídeo
+pitch, o caminho previsível é rodar tudo local, ou fazer a demonstração inteira
+na mesma sessão, sem deixar o serviço ocioso no meio.
+
 ## Pendências da entrega
 
 - [ ] `FRONTEND_URL` preenchida com a URL real do deploy
-- [ ] Link do repositório público
+- [ ] Link do repositório do portal, no topo deste arquivo
 - [ ] Link da API publicada
